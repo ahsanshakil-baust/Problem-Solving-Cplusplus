@@ -3,6 +3,9 @@
     "cstddef": "cpp",
     "ostream": "cpp",
     "iostream": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "bitset": "cpp",
+    "string_view": "cpp",
+    "regex": "cpp"
   }
 }
