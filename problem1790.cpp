@@ -59,8 +59,8 @@ bool areAlmostEqualV2(string s1, string s2)
 int main()
 {
 
-    string s1 = "bank";
-    string s2 = "kanb";
+    string s1 = "attack";
+    string s2 = "defend";
 
     cout << areAlmostEqualV2(s1, s2) << endl;
 
