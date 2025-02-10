@@ -9,26 +9,21 @@ string clearDigits(string s)
 
     while (i < result.size())
     {
-        if (!isdigit(s[i]) && isdigit(s[i + 1]))
+        if (isdigit(result[i]))
+        {
+            result.erase(i);
+        }
+        else if (!isdigit(result[i]) && isdigit(result[i + 1]))
         {
             result.erase(i, 2);
-            i++;
-        }
-        i++;
-
-        if (i == result.size() - 1)
-        {
             i = 0;
         }
-    }
+        else
+        {
 
-    // for (int i = 0; i < s.size(); i++)
-    // {
-    //     if (!isdigit(s[i]) && !isdigit(s[i + 1]))
-    //     {
-    //         result += s[i];
-    //     }
-    // }
+            i++;
+        }
+    }
 
     return result;
 }
